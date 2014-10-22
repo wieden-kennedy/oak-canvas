@@ -1,4 +1,4 @@
-oak-canvas
+Oak Canvas
 ==========
 
-Canvas rendering engine for the Oak javascript framework.
+Canvas rendering engine for the Oak javascript development suite.

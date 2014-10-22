@@ -1,0 +1,16 @@
+{
+  "name": "oak-canvas",
+  "version": "1.0.0",
+  "description": "Canvas rendering engine for the Oak javascript framework.",
+  "files": "lib/core.js",
+  "contributors": [
+    "Maxwell Folley <maxwell.folley@gmail.com> (http://www.wk.com)"
+  ],
+  "license": "BSD",
+  "dependencies": {
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.4.1",
+    "gulp-jasmine-phantom": "^1.0.4",
+    "gulp-uglify": "^1.0.1"
+  }
+}

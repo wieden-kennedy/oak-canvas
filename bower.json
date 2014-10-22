@@ -1,0 +1,34 @@
+{
+  "name": "oak",
+  "version": "0.0.1",
+  "homepage": "https://github.com/wieden-kennedy/oak-canvas",
+  "authors": [
+    "Maxwell Folley"
+  ],
+  "description": "Canvas rendering engine for the Oak javascript sutie.",
+  "main": "dist/oak-canvas.min.js",
+  "keywords": [
+    "oak",
+    "framework",
+    "animation",
+    "collection"
+  ],
+  "license": "BSD",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "gulpfile.js",
+    "package.json",
+    "README.md",
+    "node_modules",
+    "bower_components",
+    "bower.json",
+    "src",
+    "spec"
+  ],
+  "dependencies": {
+    "oak": "~0.0.22",
+    "oak-support": "*",
+    "oak-dom": "~0.0.3"
+  }
+}
