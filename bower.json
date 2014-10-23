@@ -5,7 +5,7 @@
   "authors": [
     "Maxwell Folley"
   ],
-  "description": "Canvas rendering engine for the Oak javascript sutie.",
+  "description": "Canvas rendering engine for the Oak javascript development suite.",
   "main": "dist/oak-canvas.min.js",
   "keywords": [
     "oak",
@@ -27,8 +27,9 @@
     "spec"
   ],
   "dependencies": {
-    "oak": "~0.0.22",
+    "oak": "*",
     "oak-support": "*",
-    "oak-dom": "~0.0.3"
+    "oak-dom": "*",
+    "oak-inherit": "*"
   }
 }

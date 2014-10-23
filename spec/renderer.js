@@ -1,6 +1,6 @@
 "use strict";
 
-describe("inherits", function () {
+describe("renderer", function () {
 
   it("defined", function () {
     expect(oak.canvas.renderer).toBeDefined();

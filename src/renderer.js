@@ -245,8 +245,6 @@ oak.canvas = oak.canvas || {};
         oak.raf(this.draw);
         //this.delta = (this.delta <= 0) ? 1 : this.delta;
         if (this.delta < 160) {
-          oak.tweener.update();
-
           for (i = 0; i < this._numInStack; i += 1) {
             this._stack[i].frame.call(this._stack[i]);
           }
@@ -383,11 +381,9 @@ oak.canvas = oak.canvas || {};
         // Update this._time so stage.delta doesn't turn into a giant number when the page loses focus
         this._time = new Date().getTime();
 
-        oak.tweener.resume();
         oak.raf(this.draw);
         this.trigger("rendererResumed");
       } else {
-        oak.tweener.pause();
         this.trigger("rendererPaused");
       }
     };

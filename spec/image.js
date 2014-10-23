@@ -7,18 +7,20 @@ describe("image", function () {
   });
 
   describe ("image loading", function () {
-    var triggered = false,
+    var
+      image,
+      triggered = false,
+
+    beforeEach(function (done) {
+      setTimeout(function () {
         image = new oak.canvas.Image();
-
-    image.load("src/canvas/spec/img/350x150.gif");
-
-    image.once("loaded", function () {
-      triggered = true;
+        image.load("src/canvas/spec/img/350x150.gif");
+        image.once("loaded", function () {
+          triggered = true;
+        });
+        done();
+      }, 1);
     });
-
-    waitsFor(function () {
-      return image.loaded;
-    }, "Image never loaded", 100);
 
     it("loads", function () {
       expect(image.loaded).toBe(true);
